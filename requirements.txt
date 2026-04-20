@@ -1,7 +1,6 @@
 flask
-tensorflow
+gunicorn
 numpy
 pillow
-scikit-learn
+tensorflow
 mysql-connector-python
-gunicorn
