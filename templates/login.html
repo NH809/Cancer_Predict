@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+
+<style>
+/* ===== BACKGROUND ===== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== CARD ===== */
+.login-card {
+    width: 350px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    text-align: center;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* ===== TITLE ===== */
+.login-card h2 {
+    margin-bottom: 20px;
+}
+
+/* ===== INPUTS ===== */
+.input-box {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+}
+
+/* ===== BUTTON ===== */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #00c6ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0072ff;
+}
+
+/* ===== FOOTER TEXT ===== */
+.footer {
+    margin-top: 15px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="login-card">
+
+    <h2>🔐 Welcome Back</h2>
+
+    <form method="post">
+        <input type="text" name="username" placeholder="Username" class="input-box" required>
+        <input type="password" name="password" placeholder="Password" class="input-box" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <div class="footer">
+        AI Cancer Detection System
+    </div>
+
+</div>
+
+</body>
+</html>
